@@ -1,6 +1,36 @@
-# CM_ESP_P4_C5 Open Hardware Platform
+# CM_ESP_P4_C5 Open Hardware Edge Vision Platform
 
-Open hardware development kit for edge vision, HMI, control, and connectivity.
+[![Open Hardware](https://img.shields.io/badge/Open%20Hardware-Camera%20HMI%20Control-brightgreen.svg)](#)
+[![Espressif ESP32-P4](https://img.shields.io/badge/MCU-ESP32--P4%20RISC--V%20360MHz-blue.svg)](#)
+[![Espressif ESP32-C5](https://img.shields.io/badge/Wireless-ESP32--C5%20WiFi%206%205GHz%20BLE%205-lightgrey.svg)](#)
+[![Camera Interface](https://img.shields.io/badge/Camera-MIPI%20CSI%20DVP%20standard%20pinout-orange.svg)](#)
+[![Display Output](https://img.shields.io/badge/Display-MIPI%20DSI%20RGB%20parallel-yellow.svg)](#)
+[![Industrial Temp](https://img.shields.io/badge/Temp--range--40°C_+85°C-critical.svg)](#)
+
+Open hardware dev kit for edge vision and HMI. ESP32-P4 SOM for compute. ESP32-C5 module for Wi-Fi 6 dual band 2.4 and 5 GHz Bluetooth 5 LE Thread and Zigbee. Shared Camemake camera module pinout. MIPI CSI camera in. MIPI DSI display out. Ethernet USB SD I²S audio. All design files public. Production modules sold.
+
+[Live 3D hardware view](https://www.camemaker.com/cm-esp-p4-c5-open-hardware-edge-vision-platform)
+
+## What this is
+
+CM_ESP_P4_C5 is an open hardware edge vision platform based on Espressif ESP32-P4 and ESP32-C5.  
+It targets embedded camera systems, human machine interface panels, industrial control, robotics control heads and smart gateways.
+
+The kit exposes:
+- CM_P4-A1-N16R32 ESP32-P4 system on module  
+- CM_ESP32-C5-WROOM-1-N8R8 ESP32-C5 Wi-Fi 6 wireless module  
+- Standard Camemake camera module connector with fixed pinout  
+- MIPI CSI camera input and DVP or SPI sensor input  
+- MIPI DSI and RGB parallel display output for HMI  
+- RMII Ethernet 10/100, USB 2.0 HS OTG and Full Speed OTG  
+- SD card, I²S audio, CAN TWAI, GPIO expansion  
+- Full schematic, PCB, BOM, mechanical and firmware
+
+This platform is meant for:
+- Vision nodes with display  
+- Local AI style preprocessing using ISP and H.264 encoder inside ESP32-P4  
+- Wi-Fi 6 or Thread or Zigbee connected control panels  
+- Rapid product bring up with ready enclosure data and production modules
 
 This platform combines:
 - A high-performance ESP32-P4 SOM (CM_P4-A1-N16R32)
@@ -170,18 +200,12 @@ This is meant to let you spin your own carrier, not just blink LEDs.
 
 ## 7. Live hardware view (3D board)
 
-Below is an embedded Altium 365 viewer for the CM_ESP_P4_C5 board.
+A live, interactive 3D view of the CM_ESP_P4_C5 board is available here:
 
-> Note: GitHub strips iframes in README rendering.  
-> Teams cloning this repo for internal docs or static hosting can keep the embed.  
-> On github.com you will just see the HTML below as text.
+https://www.camemaker.com/cm-esp-p4-c5-open-hardware-edge-vision-platform
 
-```html
-<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=41859615-3556-46FD-834A-538307991D47&activeView=3D"
-        width="1280"
-        height="720"
-        style="overflow:hidden;border:none;width:100%;height:720px;"
-        scrolling="no"
-        allowfullscreen="true"
-        onload="window.top.scrollTo(0,0);">
-</iframe>
+That page embeds the Altium 365 viewer so you can inspect the full assembly, component placement, and mechanical envelope in the browser.
+
+
+If you are browsing this on GitHub and want a static reference, see `/docs/hardware/board-3d.png` for a snapshot.
+
