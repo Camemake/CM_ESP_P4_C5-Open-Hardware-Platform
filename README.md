@@ -207,5 +207,3 @@ https://www.camemaker.com/cm-esp-p4-c5-open-hardware-edge-vision-platform
 That page embeds the Altium 365 viewer so you can inspect the full assembly, component placement, and mechanical envelope in the browser.
 
 
-If you are browsing this on GitHub and want a static reference, see `/docs/hardware/board-3d.png` for a snapshot.
-
